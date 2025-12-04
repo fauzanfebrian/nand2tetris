@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+
+*.out
+*.cmp
+!projects/**/*.cmp
+
+.vscode/
+.idea/
+
+projects/**/*.vm
+projects/**/*.hack
+
+projects/**/*.class
