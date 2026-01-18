@@ -27,10 +27,10 @@ This is the "inverse" from the [Multiplexor](#multiplexor-aka-mux), given 2 inpu
 
 ### 16-Bit Variants
 
-- [ ] Not16
-- [ ] And16
-- [ ] Or16
-- [ ] Mux16
+- [x] Not16
+- [x] And16
+- [x] Or16
+- [x] Mux16
 
 ### Multi-Way Variants
 
