@@ -34,9 +34,9 @@ This is the "inverse" from the [Multiplexor](#multiplexor-aka-mux), given 2 inpu
 
 ### Multi-Way Variants
 
-- [ ] Or8Way
-- [ ] Mux4Way16
-- [ ] Mux8Way16
-- [ ] DMux4Way
-- [ ] DMux8Way
+- [x] Or8Way
+- [x] Mux4Way16
+- [x] Mux8Way16
+- [x] DMux4Way
+- [x] DMux8Way
 
