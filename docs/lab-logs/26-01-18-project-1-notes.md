@@ -1,4 +1,4 @@
-# Project 1 Overview
+# Project 1
 
 The course has provided a single God-level logic gate: **Nand**, and from that Nand we've been ordered to build a functional computer. How? One step at a time.
 
@@ -17,9 +17,9 @@ Project 1's main goal is to build 15 logic gates from scratch, these 15 logic ga
 
 #### Multiplexor aka Mux
 
-A multiplexor/Mux is a selector logic gates, given 3 inputs `a`, `b`, and `sel` or `select`. If the value of `sel` input is **0**, then the selected value is `a`, if not then `b`.
+A multiplexor/Mux is a selector logic gate, given 3 inputs `a`, `b`, and `sel` or `select`. If the value of `sel` input is **0**, then the selected value is `a`, if not then `b`.
 
-This is just a Ternary Operator, if you a coder you'll absolutely nail the concept of this Mux logic gate easily.
+This is just a Ternary Operator, if you are a coder you'll absolutely nail the concept of this Mux logic gate easily.
 
 #### Demultiplexor aka DMux
 
@@ -40,3 +40,6 @@ This is the "inverse" from the [Multiplexor](#multiplexor-aka-mux), given 2 inpu
 - [x] DMux4Way
 - [x] DMux8Way
 
+## Status
+
+On 18 January 2026 22:25, I've finished the first project, the Logic Gates Project. This first project made me bang my head, but it's not that hard tho.
