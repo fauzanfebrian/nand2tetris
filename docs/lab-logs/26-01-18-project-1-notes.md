@@ -8,12 +8,12 @@ Project 1's main goal is to build 15 logic gates from scratch, these 15 logic ga
 
 ### Elementary Logic Gates
 
-- Not
-- And
-- Or
-- Xor
-- Mux
-- DMux
+- [x] Not
+- [x] And
+- [x] Or
+- [x] Xor
+- [x] Mux
+- [x] DMux
 
 #### Multiplexor aka Mux
 
@@ -27,16 +27,16 @@ This is the "inverse" from the [Multiplexor](#multiplexor-aka-mux), given 2 inpu
 
 ### 16-Bit Variants
 
-- Not16
-- And16
-- Or16
-- Mux16
+- [ ] Not16
+- [ ] And16
+- [ ] Or16
+- [ ] Mux16
 
 ### Multi-Way Variants
 
-- Or8Way
-- Mux4Way16
-- Mux8Way16
-- DMux4Way
-- DMux8Way
+- [ ] Or8Way
+- [ ] Mux4Way16
+- [ ] Mux8Way16
+- [ ] DMux4Way
+- [ ] DMux8Way
 
