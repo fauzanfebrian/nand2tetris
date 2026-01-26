@@ -12,7 +12,7 @@ Project 2 main goal is to build 5 chips, a family of combinational chips, from s
 
   **ANSWER**
   The implementation is really simple, if looking to the [cmp](../../projects/2/HalfAdder.cmp) file, it's just a combination of **XOR** and **AND** gates.
-- [ ] FullAdder
+- [x] FullAdder
 
   A combination from HalfAdder, the full implemntation of an adder which contain inputs: `a`, `b`, and `c`. Yes **C**, this is an input that allowing us use the third input so the `sum`, and `carry` bot can get 1 value.
 - [ ] Add16
