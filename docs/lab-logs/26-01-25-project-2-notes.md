@@ -6,9 +6,12 @@ In this project, we can utilise all of the chips we built at [Project 1](./26-01
 
 Project 2 main goal is to build 5 chips, a family of combinational chips, from simple adders to an Arithmetic Logic Unit (ALU).
 
-- [ ] HalfAdder
+- [x] HalfAdder
 
   Half Adder is a chip combining logic gates to get output `sum`, `carry` from the input `a` and `b`.
+
+  **ANSWER**
+  The implementation is really simple, if looking to the [cmp](../../projects/2/HalfAdder.cmp) file, it's just a combination of **XOR** and **AND** gates.
 - [ ] FullAdder
 
   A combination from HalfAdder, the full implemntation of an adder which contain inputs: `a`, `b`, and `c`. Yes **C**, this is an input that allowing us use the third input so the `sum`, and `carry` bot can get 1 value.
