@@ -15,7 +15,7 @@ Project 2 main goal is to build 5 chips, a family of combinational chips, from s
 - [x] FullAdder
 
   A combination from HalfAdder, the full implemntation of an adder which contain inputs: `a`, `b`, and `c`. Yes **C**, this is an input that allowing us use the third input so the `sum`, and `carry` bot can get 1 value.
-- [ ] Add16
+- [x] Add16
 
   16 combinations of 16 FullAdder.
 - [ ] Inc16
