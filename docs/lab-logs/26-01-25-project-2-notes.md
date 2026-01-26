@@ -18,7 +18,7 @@ Project 2 main goal is to build 5 chips, a family of combinational chips, from s
 - [x] Add16
 
   16 combinations of 16 FullAdder.
-- [ ] Inc16
+- [x] Inc16
 
   An incrementor, its mechanism is just simply add 1 to the incoming value.
 - [ ] ALU
