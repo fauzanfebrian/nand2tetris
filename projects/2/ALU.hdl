@@ -27,19 +27,45 @@
 // if (no == 1) sets out = !out   // bitwise not
 
 CHIP ALU {
-    IN  
-        x[16], y[16],  // 16-bit inputs        
+    IN
+        x[16], y[16],  // 16-bit inputs
         zx, // zero the x input?
         nx, // negate the x input?
         zy, // zero the y input?
         ny, // negate the y input?
         f,  // compute (out = x + y) or (out = x & y)?
         no; // negate the out output?
-    OUT 
+    OUT
         out[16], // 16-bit output
         zr,      // if (out == 0) equals 1, else 0
         ng;      // if (out < 0)  equals 1, else 0
 
+
     PARTS:
-    //// Replace this comment with your code.
+    // --- X VALUE
+    Not16(in=x, out=inversedX);
+    And16(a=x, b=inversedX, out=zeroX);
+    Mux16(a=x, b=zeroX, sel=zx, out=zxVal);
+
+    Not16(in=zxVal, out=inversedZXVal);
+    Mux16(a=zxVal, b=inversedZXVal, sel=nx, out=nxVal);
+    // --- Y VALUE
+    Not16(in=y, out=inversedY);
+    And16(a=y, b=inversedY, out=zeroY);
+    Mux16(a=y, b=zeroY, sel=zy, out=zyVal);
+
+    Not16(in=zyVal, out=inversedZYVal);
+    Mux16(a=zyVal, b=inversedZYVal, sel=ny, out=nyVal);
+    // --- F
+    Add16(a=nxVal, b=nyVal, out=addF);
+    And16(a=nxVal, b=nyVal, out=andF);
+    Mux16(a=andF, b=addF, sel=f, out=fVal);
+    // --- NO
+    Not16(in=fVal, out=negatedFVal);
+    Mux16(a=fVal, b=negatedFVal, sel=no, out=out, out[15]=ng, out[0..7]=lowBitOut, out[8..15]=highBitOut);
+    // --- ZR
+    Or8Way(in=lowBitOut, out=lowBitVal);
+    Or8Way(in=highBitOut, out=highBitVal);
+    Or(a=lowBitVal, b=highBitVal, out=ngZr);
+    Not(in=ngZr, out=zr);
 }
