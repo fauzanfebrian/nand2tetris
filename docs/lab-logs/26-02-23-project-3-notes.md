@@ -6,7 +6,7 @@ Given all the chips built in Projects 1 and 2 for our foundation and also there 
 
 This project main goal is to build a family of sequential chips, from a 1-bit register to a 16K memory unit.
 
-- [ ] Bit
+- [x] Bit
 
   1-Bit register can be built from a `DFF` and a multiplexor.
 - [ ] Register
