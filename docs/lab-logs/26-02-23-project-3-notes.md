@@ -12,7 +12,7 @@ This project main goal is to build a family of sequential chips, from a 1-bit re
 - [x] Register
 
   16-Bit register this is just a combination of multiple 1-bit registers.
-- [ ] RAM8
+- [x] RAM8
 
   The first ram device or memory of eight 16-bit registers we should build, given 2 inputs: `in` for the data input and `address` for which data we should interact with, then there's a load parameter and there's an out parameter. We should add the in value to all the registers simultaneously and for selecting the right register we could utilized the mux/demux chips.
 - [ ] RAM64
