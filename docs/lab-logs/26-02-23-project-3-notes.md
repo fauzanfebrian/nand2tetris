@@ -9,7 +9,7 @@ This project main goal is to build a family of sequential chips, from a 1-bit re
 - [x] Bit
 
   1-Bit register can be built from a `DFF` and a multiplexor.
-- [ ] Register
+- [x] Register
 
   16-Bit register this is just a combination of multiple 1-bit registers.
 - [ ] RAM8
