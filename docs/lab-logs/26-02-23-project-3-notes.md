@@ -27,6 +27,6 @@ This project main goal is to build a family of sequential chips, from a 1-bit re
 - [x] RAM16K
 
   A stacked of 4 RAM4k.
-- [ ] PC
+- [x] PC
 
   Program Counter, it just a counter with 3 control bits: `load`, `inc`, `reset`.

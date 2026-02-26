@@ -12,7 +12,15 @@
 CHIP PC {
     IN in[16],inc, load, reset;
     OUT out[16];
-    
+
     PARTS:
-    //// Replace this comment with your code.
+    Mux(a=inc, b=false, sel=load, out=realInc);
+    Or(a=realInc, b=reset, out=incOrReset);
+    Or(a=load, b=reset, out=loadOrReset);
+
+    Or(a=incOrReset, b=loadOrReset, out=loadData);
+    Register(in=loopbackPin, load=loadData, out=registerData, out=out);
+
+    Inc16(in=registerData, out=incData);
+    Mux4Way16(a=registerData, b=incData, c=in, d=false, sel[0]=incOrReset, sel[1]=loadOrReset, out=loopbackPin);
 }
