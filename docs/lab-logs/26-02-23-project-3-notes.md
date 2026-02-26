@@ -18,7 +18,7 @@ This project main goal is to build a family of sequential chips, from a 1-bit re
 - [x] RAM64
 
   A stacked of 8 RAM8.
-- [ ] RAM512
+- [x] RAM512
 
   A stacked of 8 RAM64.
 - [ ] RAM4K
