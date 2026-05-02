@@ -39,7 +39,7 @@ Project 5 is the culmination of everything we've built so far. We are taking the
   - **Keyboard:** Address `24576` (`0x6000`).
   *Task:* Use `DMux` to route the `load` bit and `Mux` to select the `out` based on the highest bits of the address.
 
-- [ ] **Complete `CPU.hdl`**
+- [x] **Complete `CPU.hdl`**
   Synthesize the D-register, A-register, ALU, and PC into a functional unit.
   - **Instruction Decoding:** Unpack the 16-bit instruction. Distinguish between A-instructions (MSB=0) and C-instructions (MSB=1).
   - **Control Logic:** Route C-control bits to destination registers (A, D, M) and ALU inputs.
