@@ -46,7 +46,7 @@ Project 5 is the culmination of everything we've built so far. We are taking the
   - **Jump Logic:** Write HDL to combine ALU status bits (`zr`, `ng`) with instruction jump bits to drive the PC `load` signal.
   - **Memory Interface:** Correct wiring for `outM`, `writeM`, `addressM`, and instruction fetch (`pc`).
 
-- [ ] **Complete `Computer.hdl`**
+- [x] **Complete `Computer.hdl`**
   Connect the high-level components according to the top-level architecture:
   - Connect **ROM32K** (Instruction Memory) address input to the CPU's `pc` output.
   - Connect the **CPU**'s memory interface (`outM`, `writeM`, `addressM`) to the **Memory** chip.
