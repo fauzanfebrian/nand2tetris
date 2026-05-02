@@ -11,7 +11,7 @@ In this project, we explored the two primary ways to organize a computer's memor
 
 ## Modeling Behavior: Finite State Machines (FSM)
 
-To handle complex operations that take place over multiple cycles (especially in Von Neumann systems), we use **Finite State Machines**. 
+To handle complex operations that take place over multiple cycles (especially in Von Neumann systems), we use **Finite State Machines**.
 - Each "state" represents what the machine is doing at a specific moment.
 - We use a **State Register** to track our current position.
 - Logic gates determine the "next state" based on the current state and hardware signals.
@@ -32,7 +32,7 @@ Project 5 is the culmination of everything we've built so far. We are taking the
 
 ## Goals
 
-- [ ] **Complete `Memory.hdl`**
+- [x] **Complete `Memory.hdl`**
   Implement the logic to route the 15-bit address across three segments:
   - **RAM16K:** Address `0` to `16383` (`0x0000` to `0x3FFF`).
   - **Screen:** Address `16384` to `24575` (`0x4000` to `0x5FFF`).
